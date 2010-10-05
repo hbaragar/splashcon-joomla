@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>Splash</name>
+	<creationDate>09/04/2010</creationDate>
+	<author>Author Name</author>
+	<authorEmail>author@email.com</authorEmail>
+	<authorUrl>http://author.url.com</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description></description>
+	<files>
+		<filename>index.php</filename>
+	</files>
+	<positions>
+		<position>top-menu</position>
+		<position>search-box</position>
+		<position>sociable</position>
+		<position>main-menu</position>
+		<position>left</position>
+		<position>right</position>
+		<position>right-bottom</position>
+		<position>bottom-content</position>
+		<position>boxes</position>
+		<position>footer</position>
+	</positions>
+	<params>
+	</params>
+</install>
