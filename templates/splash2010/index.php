@@ -85,7 +85,7 @@ BODY { behavior: url("<?php echo $this->baseurl ?>/templates/splash2010/css/cssh
 
     			<div class="relax">&nbsp;</div>
     			<jdoc:include type="modules" name="sociable" />
-    			<span>John Ascuaga's Nugget &middot; Reno/Tahoe Nevada, USA</span>
+    			<span>A Conference Facility &middot; Portland Oregon, USA</span>
     		</div>
     		<a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->baseurl ?>/templates/splash2010/images/logotype2011-2.png" alt="Splash" /></a>
 			<jdoc:include type="modules" name="main-menu" />
