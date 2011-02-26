@@ -453,7 +453,7 @@ A.photo {
 }
 .content .small-box.google P {font-size: 10px;}
 .content .small-box.google .small-box-gradient {
-	background: #fff ;
+	background: #fff url("../images/bg/small-box-gradient-2.jpg") repeat-x left top;
 }
 
 .boxes {
