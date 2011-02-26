@@ -477,6 +477,7 @@ A.photo {
 	-opera-border-radius: 15px;	/* for Opera */
 	-moz-border-radius: 15px;	/* for Firefox */
 	-webkit-border-radius: 15px;	/* for Safari */
+	behavior: url("templates/splash2011/css/border-radius.htc");	/* for IE678 */
 }
 .box-a {
 	width: 185px;
