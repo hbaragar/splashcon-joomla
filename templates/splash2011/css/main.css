@@ -453,43 +453,40 @@ A.photo {
 }
 .content .small-box.google P {font-size: 10px;}
 .content .small-box.google .small-box-gradient {
-	background: #fff url("../images/bg/small-box-gradient-2.jpg") repeat-x left top;
+	background: #fff ;
 }
+
 .boxes {
 	margin-left: 16px;
 	margin-top: 20px;
 }
+
 .boxes-top, .boxes-bottom {
 	line-height: 0px;
 	font-size: 1px;
 }
-.boxes-top {
-	height: 14px;
-	background: url("../images/bg/boxes-top.png") no-repeat left top;
-}
-.boxes-bottom {
-	height: 16px;
-	background: url("../images/bg/boxes-bottom.png") no-repeat left top;
-}
 .boxes-bg {
 	width: 100%;
-	background: url("../images/bg/boxes-bg.gif") repeat-y left top;
 }
+
 .box-a, .box-b, .box-c {
 	float: left;
 	display: inline;
-	background: url("../images/bg/boxes-gradient.jpg") repeat-x left top;
+	background: #fff;
 }
 .box-a {
-	width: 225px;
+	width: 185px;
+	height: 80px;
 	margin-left: 1px;
 }
 .box-b {
-	width: 359px;
+	width: 540px;
+	height: 80px;
 	margin-left: 22px;
 }
 .box-c {
-	width: 333px;
+	width: 192px;
+	height: 80px;
 	margin-left: 23px;
 	text-align: center;
 }
@@ -511,7 +508,7 @@ A.photo {
 	font-size: 12px;
 	color: #008fd4;
 }
-.box-c P {margin: 0 20px;}
+.box-c P {margin: 0 10px;}
 .box-a P {margin-right: 10px;}
 .content .text-indent P {
 	text-indent: 15px;
