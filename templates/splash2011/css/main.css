@@ -473,6 +473,10 @@ A.photo {
 	float: left;
 	display: inline;
 	background: #fff;
+	border-radius: 15px;
+	-opera-border-radius: 15px;	/* for Opera */
+	-moz-border-radius: 15px;	/* for Firefox */
+	-webkit-border-radius: 15px;	/* for Safari */
 }
 .box-a {
 	width: 185px;
