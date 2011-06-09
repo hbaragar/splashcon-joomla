@@ -1,8 +1,8 @@
 <?php
 /**
-* @version		$Id: framework.php 13415 2009-11-03 15:53:25Z ian $
+* @version		$Id: framework.php 21080 2011-04-04 22:01:17Z dextercowley $
 * @package		Joomla
-* @copyright	Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+* @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
 * @license		GNU/GPL, see LICENSE.php
 * Joomla! is free software. This version may have been modified pursuant
 * to the GNU General Public License, and as distributed it includes or
@@ -54,8 +54,6 @@ if (@$CONFIG->error_reporting === 0) {
 	error_reporting( $CONFIG->error_reporting );
 	ini_set( 'display_errors', 1 );
 }
-$jdata = JRequest::getVar('jdata', array());
-$jmap  = JRequest::getVar('jmap', NULL);
 
 define( 'JDEBUG', $CONFIG->debug );
 
