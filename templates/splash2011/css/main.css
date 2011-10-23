@@ -14,7 +14,7 @@ H1, H2, H3, H4, H5, H6, P, UL, FORM, OL {
 	margin: 0;
 }
 .content H2 {
-	color: #008fd4;
+	color: #0076C1;
 	font-size: 22px;
 	padding-top: 20px;
 	border-bottom: 1px dotted #a5a5a5;
@@ -24,19 +24,19 @@ H1, H2, H3, H4, H5, H6, P, UL, FORM, OL {
 
 .main-content > .text > H2 { padding-top: 0 }
 .content H3 {
-	color: #008fd4;
+	color: #0076C1;
 	font-size: 18px;
 	padding-top: 15px;
 	border-bottom: 1px dotted #a5a5a5;
 	padding-bottom: 5px;
 }
 .content H4 {
-	color: #008fd4;
+	color: #0076C1;
 	font-size: 14px;
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
-.content H2 A, .content H3 A, .content H4 A {color: #008fd4;}
+.content H2 A, .content H3 A, .content H4 A {color: #0076C1;}
 .content H5 {font-size: 14px;}
 .content P {
 	font-size: 12px;
@@ -69,7 +69,7 @@ H1, H2, H3, H4, H5, H6, P, UL, FORM, OL {
 	margin-top: 4px;
 	background: url("../images/icons/list.gif") no-repeat left 4px;	
 }
-.content A { color: #008fd4; }
+.content A { color: #0076C1; }
 .relax {
 	clear: both;
 	height: 0;
@@ -163,7 +163,7 @@ html>body* .header UL.menu LI  {
 	padding: 5px 10px;
 	display: block;
 	background-color: #3b5998;
-	border: 1px solid #008fd4;
+	border: 1px solid #0076C1;
 }
 .header UL.menu UL LI A:HOVER {
 	border: 1px solid #3b5998;
@@ -247,7 +247,7 @@ html>body* .header UL.menu LI  {
 }
 .blog-box .wrapper {padding: 22px 30px 20px;}
 .blog-box H3 {
-	color: #008fd4;
+	color: #0076C1;
 	font-size: 12px;
 	margin: 0 0 13px;
 }
@@ -258,7 +258,7 @@ html>body* .header UL.menu LI  {
 }
 
 .blog-box A.more-blog {
-	color: #008fd4;
+	color: #0076C1;
 	font-size: 10px;
 	margin: 0 0 10px;
 }
@@ -442,14 +442,14 @@ A.photo {
 .content .small-box.google {text-align: center;}
 .content .small-box.google H3 {
 	font-size: 12px;
-	color: #008fd4;
+	color: #0076C1;
 	border-bottom: 1px dotted #a5a5a5;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 }
 .small-box-spacer.google {
 	font-size: 12px;
-	color: #008fd4;
+	color: #0076C1;
 }
 .content .small-box.google P {font-size: 10px;}
 .content .small-box.google .small-box-gradient {
@@ -508,10 +508,10 @@ A.photo {
 	margin-left: 20px;
 	margin-top: 5px;
 }
-.boxes A { color: #008fd4; }
+.boxes A { color: #0076C1; }
 .boxes H3 {
 	font-size: 12px;
-	color: #008fd4;
+	color: #0076C1;
 }
 .box-c P {margin: 0 10px;}
 .box-a P {margin-right: 10px;}
@@ -619,7 +619,7 @@ A.photo {
 }
 #system-message .message,
 #system-message .notice {
-	color: #008fd4;
+	color: #0076C1;
 	font-size: 18px;
 }
 
@@ -659,7 +659,7 @@ A.photo {
 	font-size: 12px;
 }
 .content .blue, 
-.content P SPAN.highlight { color: #008fd4; }
+.content P SPAN.highlight { color: #0076C1; }
 
 .content .alignright {float: right;} 
 .content .alignleft {float: left;} 
@@ -697,7 +697,7 @@ A.photo {
 .cfp-submission-summary {
     font-size: small;
     line-height: 100%;
-    border: solid #008fd4 1px;
+    border: solid #0076C1 1px;
     margin: 15px 25px 15px 0px;
 }
 
