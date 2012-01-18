@@ -86,7 +86,7 @@ BODY { behavior: url("<?php echo $this->baseurl ?>/templates/splash2011/css/cssh
     			<div class="relax">&nbsp;</div>
     			<jdoc:include type="modules" name="sociable" />
 			<span><a href="http://www.loewshotels.com/en/Ventana-Canyon-Resort" target="_blank">Loew's Ventana Canyon Resort</a> &middot;
-			<a href="http://www.visittucson.org/">Tuscon Arizona, USA</a></span>
+			<a href="http://www.visittucson.org/" target="blank">Tuscon Arizona, USA</a></span>
     		</div>
     		<a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->baseurl ?>/templates/splash2011/images/Splash_WebBanner.png" alt="Splash" /></a>
 			<jdoc:include type="modules" name="main-menu" />
