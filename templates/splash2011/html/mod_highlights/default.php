@@ -11,7 +11,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 	    $item           = $list[$flashnum];
 	    modHighlightsHelper::renderItem($item, $params, $access);
 	?>
-	<a href="index.php?option=com_content&view=category&layout=blog&id=43&Itemid=16" class="button">More Highlights</a>
+	<a href="highlights" class="button">More Highlights</a>
 	<div class="relax">&nbsp;</div>
 </div></div>
 <div class="box-bottom">&nbsp;</div>
