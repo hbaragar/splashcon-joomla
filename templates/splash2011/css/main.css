@@ -857,3 +857,13 @@ p.floor-plan { margin-left: -32px; text-align: center; width: 120%;  }
 .small-box-bg.speakers ul p { margin: 0; }
 .small-box-bg.speakers a { font-size: 10px; }
 
+
+table.front-page-schedule { font-size: 11px; border: solid 1px #3b5998; text-align: center; }
+table.front-page-schedule th { background-color: #3333ff; color: #ffffff; font-size: 14px; width: 14%; }
+table.front-page-schedule th span.date { white-space: nowrap; }
+table.front-page-schedule td { padding: 2px; }
+table.front-page-schedule td.plop        { background-color: #ffcc00; border: 1px solid #767676; }
+table.front-page-schedule td.dls         { background-color: #bbbb00; border: 1px solid #767676; }
+table.front-page-schedule td.doctoral    { background-color: #ff9966; border: 1px solid #767676; }
+table.front-page-schedule td.splash-main { background-color: #cccccc; border: 1px solid #767676; text-align: left; }
+table.front-page-schedule td.workshops   { background-color: #ffcccc; border: 1px solid #767676; }
