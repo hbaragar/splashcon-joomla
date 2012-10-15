@@ -2,7 +2,7 @@
 defined('_JEXEC') or die('Restricted access'); ?>
 
 <div class="blog-box">
-	<a class="tab" href="#"><img src="templates/splash_site/images/buttons/blog-tab.gif" alt="" /></a>
+	<a class="tab" href="#"><img src="templates/splashcon/images/buttons/blog-tab.gif" alt="" /></a>
 	<div class="blog"><div class="blog-top"><div class="blog-bottom"><div class="wrapper">
 		
 		<?php foreach ($list as $item) {  ?>	

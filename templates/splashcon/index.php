@@ -3,8 +3,8 @@
  * @copyright	Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
  * @license		GNU/GPL, see LICENSE.php
  * Joomla! is free software. This version may have been modified pursuant
- * to the GNU General <?php echo $this->baseurl ?>/templates/splash_site License, and as distributed it includes or
- * is derivative of works licensed under the GNU General <?php echo $this->baseurl ?>/templates/splash_site License or
+ * to the GNU General <?php echo $this->baseurl ?>/templates/splashcon License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General <?php echo $this->baseurl ?>/templates/splashcon License or
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  */
@@ -18,38 +18,38 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <head>
 
 <jdoc:include type="head" />
-<link href="<?php echo $this->baseurl ?>/templates/splash_site/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/splash_site/css/main.css" type="text/css" />
+<link href="<?php echo $this->baseurl ?>/templates/splashcon/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/splashcon/css/main.css" type="text/css" />
 
 <!--[if lt IE 7]>
 <style type="text/css" media="screen">
-BODY { behavior: url("<?php echo $this->baseurl ?>/templates/splash_site/css/csshover.htc"); }
+BODY { behavior: url("<?php echo $this->baseurl ?>/templates/splashcon/css/csshover.htc"); }
 .header  {
 	background: none;
 	height: 152px;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splash_site/images/bg/header-bg.png', sizingMethod='scope');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splashcon/images/bg/header-bg.png', sizingMethod='scope');
 }
 .header A,
 .header .right-header,
 .news A, .box A {position: relative;}
 .small-box-top {
 	background: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splash_site/images/bg/small-box-top.png', sizingMethod='scope');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splashcon/images/bg/small-box-top.png', sizingMethod='scope');
 }
 .small-box-bottom {
 	background: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splash_site/images/bg/small-box-bottom.png', sizingMethod='scope');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splashcon/images/bg/small-box-bottom.png', sizingMethod='scope');
 }
 .boxes-top {
 	background: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splash_site/images/bg/boxes-top.png', sizingMethod='scope');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splashcon/images/bg/boxes-top.png', sizingMethod='scope');
 }
 .boxes-bottom {
 	background: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splash_site/images/bg/boxes-bottom.png', sizingMethod='scope');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $this->baseurl ?>/templates/splashcon/images/bg/boxes-bottom.png', sizingMethod='scope');
 }
 .content UL LI {
-	background: url("<?php echo $this->baseurl ?>/templates/splash_site/images/icons/list.gif") no-repeat left 13px;
+	background: url("<?php echo $this->baseurl ?>/templates/splashcon/images/icons/list.gif") no-repeat left 13px;
 	border: 1px oslid red;
 }
 .header BUTTON {margin-top: 3px;}
@@ -88,7 +88,7 @@ BODY { behavior: url("<?php echo $this->baseurl ?>/templates/splash_site/css/css
 			<span><a href="http://indianapolis.hyatt.com/hyatt/hotels-indianapolis/" target="_blank">Hyatt Regency Indianapolis</a> &middot;
 			<a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a></span>
     		</div>
-    		<a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->baseurl ?>/templates/splash_site/images/Splash_WebBanner.png" alt="Splash" /></a>
+    		<a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->baseurl ?>/templates/splashcon/images/Splash_WebBanner.png" alt="Splash" /></a>
 			<jdoc:include type="modules" name="main-menu" />
     	</div>
     	
