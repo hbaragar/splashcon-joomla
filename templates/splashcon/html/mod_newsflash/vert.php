@@ -9,7 +9,7 @@
 			modNewsFlashHelper::renderItem($list[$i], $params, $access);
 		} ?>
 		
-		<a href="index.php?option=com_content&view=section&layout=blog&id=21" class="button">Old News</a>
+		<a href="index.php?option=com_content&view=section&layout=blog&id=34" class="button">Old News</a>
 		<!--<a href="index.php/news-a-announcements" class="button">Previous News</a>-->
 			<div class="relax">&nbsp;</div>
 	</div>
