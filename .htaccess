@@ -1,3 +1,4 @@
+php_flag newrelic.enabled off
 ##
 # @version $Id: htaccess.txt 10492 2008-07-02 06:38:28Z ircmaxell $
 # @package Joomla
