@@ -131,6 +131,13 @@ class JDocumentRendererHead extends JDocumentRenderer
 
 		// Generate script file links
 		foreach ($document->_scripts as $strSrc => $strType) {
+     // Code to disable mootools for your site (still loads it for your admin)
+    // Written by Brad Markle w/ InMotionHosting.com
+    $ex_src = explode("/",$strSrc);
+    $js_file_name = $ex_src[count($ex_src)-1];
+    $js_to_ignore = array("mootools.js","mootools-more.js");
+    if( in_array($js_file_name,$js_to_ignore) AND substr_count($document->baseurl,"/administrator") < 1 AND $_GET['view'] != 'form')
+        continue;
 			$strHtml .= $tab.'<script type="'.$strType.'" src="'.$strSrc.'"></script>'.$lnEnd;
 		}
 
