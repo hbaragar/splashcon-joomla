@@ -881,7 +881,7 @@ table.front-page-schedule td.workshops   { background-color: #ffcccc; border: 1p
             } 
             
 #divMenuRight{
-             margin-top:35px;
+             margin-top:12px;
              }
              
 .presentation {
@@ -892,4 +892,37 @@ table.front-page-schedule td.workshops   { background-color: #ffcccc; border: 1p
                    margin: 5px 5px 5px 0;
                   }  
                   
-                                                                                  
+#divAboveMenu{
+    position: relative;
+    top: 10px;
+}
+.navbar {
+   margin-bottom:45px !important;
+}
+
+@media all and (max-width: 1200px) and (min-width: 980px) {
+		#divSiteTitle img {margin-top:5px; height:37px; width:192px;}
+}
+@media all and (max-width: 979px)  {
+		#divSiteTitle img {margin-top:-15px; height:75px; width:385px;}
+}
+@media all and (min-width: 1200px)  {
+		#divSiteTitle img {margin-top:-15px; height:75px; width:385px;}
+}
+
+.supporters img
+{
+  margin: 20px;
+}
+
+.supporters ul
+{
+  list-style: none;
+}
+
+.supporters ul li
+{
+  display: block;
+  width: 25%;
+  float: left;
+}
