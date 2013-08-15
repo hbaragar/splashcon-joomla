@@ -11,6 +11,9 @@
 
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
+$menu = & JSite::getMenu();
+$isHomepage = ($menu->getActive() == $menu->getDefault());
+
 ?>
 <?php echo '<?xml version="1.0"?>'; ?>
 <!DOCTYPE HTML>
@@ -133,8 +136,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
     </div>
 </div>
-     <?php $uri = $_SERVER['REQUEST_URI'];?>
-    <?php if ($uri == '/splash_joomla/' || $uri == '/splash_joomla/index.php'|| $uri == 'index.php' || $uri == '/') : ?>
+    <?php if ($isHomepage) : ?>
     
           
 <div id="decorative1" style="position:relative">
@@ -206,7 +208,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
           
         
                     <?php $uri = $_SERVER['REQUEST_URI'];?>
-    <?php if ($uri == '/splash_joomla/' || $uri == '/splash_joomla/index.php'|| $uri == 'index.php' || $uri == '/') : ?>
+    <?php if ($isHomepage) : ?>
     
           
     
