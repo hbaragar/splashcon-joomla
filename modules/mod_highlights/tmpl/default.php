@@ -6,7 +6,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <div class="box-gradient"><div class="box-bg">
 	<h3><?php echo $module->title; ?></h3>
 
-	<?php 
+	<?php var_dump($params->get('image'));
 	    srand((double) microtime() * 1000000);
 	    $flashnum       = rand(0, $items -1);
 	    $item           = $list[$flashnum];

@@ -18,7 +18,7 @@ defined('_JEXEC') or die('Restricted access');
 require_once (dirname(__FILE__).DS.'helper.php');
 
 $params->set('intro_only', 1);
-$params->set('hide_author', 1);
+$params->set('hide_author', 0);
 $params->set('hide_createdate', 0);
 $params->set('hide_modifydate', 1);
 
