@@ -11,6 +11,9 @@
 
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
+$menu = & JSite::getMenu();
+$isHomepage = ($menu->getActive() == $menu->getDefault());
+
 ?>
 <?php echo '<?xml version="1.0"?>'; ?>
 <!DOCTYPE HTML>
@@ -66,12 +69,22 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
                 <div class="span12">
 
                     <div id="divLogo" class="pull-left">
-                         <a href="" id="divSiteTitle"><img src="images/Splash_WebBanner-shadow.png" style="margin-top:-20px; height:55px;"></a>
+                         <a href="" id="divSiteTitle"><img src="images/Splash_WebBanner-shadow.png" /></a>
                          <br>
-                         <a href="http://indianapolis.hyatt.com/hyatt/hotels-indianapolis/" target="_blank">Hyatt Regency Indianapolis</a>
-			<a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a>
+                         
                     </div>
 
+                    <div id="divAboveMenu" class="pull-right visible-desktop">
+                        <div class="pull-left">
+                            <a href="http://indianapolis.hyatt.com/hyatt/hotels-indianapolis/" target="_blank">Hyatt Regency Indianapolis</a> - 
+                            <a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a><div style="width:50px; display:inline-block;">&nbsp;</div>
+                                <a target="_blank" href="http://splash2013.plaxogroups.com"><img border="0" alt="Plaxo" src="templates/splashcon_new/images/plaxo.png"></a>
+                                <a target="_blank" href="http://www.facebook.com/pages/Splash-Conference/131028490283152"><img border="0" alt="Facebook" src="templates/splashcon_new/images/facebook.png"></a>
+                                <a target="_blank" href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2487082"><img border="0" src="templates/splashcon_new/images/linked-in.png"></a>
+                                <a href="http://twitter.com/splashcon"><img width="24" border="0" height="24" alt="Twitter" src="templates/splashcon_new/images/twitter.png"></a>
+
+                        </div>
+                    </div>
                     <div id="divMenuRight" class="pull-right">
                     
                       
@@ -133,8 +146,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
     </div>
 </div>
-     <?php $uri = $_SERVER['REQUEST_URI'];?>
-    <?php if ($uri == '/splash_joomla/' || $uri == '/splash_joomla/index.php'|| $uri == 'index.php' || $uri == '/') : ?>
+    <?php if ($isHomepage) : ?>
     
           
 <div id="decorative1" style="position:relative">
@@ -205,8 +217,8 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
           
           
         
-                    <?php $uri = $_SERVER['REQUEST_URI'];?>
-    <?php if ($uri == '/splash_joomla/' || $uri == '/splash_joomla/index.php'|| $uri == 'index.php' || $uri == '/') : ?>
+                    
+    <?php if ($isHomepage) : ?>
     
           
     
