@@ -1,5 +1,4 @@
 
-
 .dropdown-toggle ul{
 	display:none;
 }
@@ -88,4 +87,34 @@
 	border:0px none !important;
 	height:1px !important;
 	line-height: 1px;
+}
+
+.sidebar h3
+{
+  font-size: 20px;
+}
+
+.sidebar h5, .sidebar h4
+{
+  font-size: 14px;
+}
+
+.sidebar
+{
+  font-size: 12px;
+  line-height: 1em;
+}
+
+.sidebar hr
+{
+  margin: 10px 0;
+}
+
+.sidebar .participant
+{
+  margin-top: 10px;
+}
+
+.sidebar .box-bg img {
+  max-width: none;
 }

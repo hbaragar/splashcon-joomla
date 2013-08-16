@@ -210,13 +210,12 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 
                 <div class="span12" id="divMain">
 
-                    
                     <br />
-                       	<jdoc:include type="message" />
-					<jdoc:include type="component" />
-          
-          
-        
+                    
+    <?php if( !$isHomepage ): ?>
+          <jdoc:include type="message" />
+					<jdoc:include type="component" />          
+    <?php endif; ?>
                     
     <?php if ($isHomepage) : ?>
     
@@ -233,41 +232,42 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 
                     <div class="row-fluid">
     
-                        <div class="span8">
+                        <div class="span9">
                            
                              <jdoc:include type="modules" name="center-left"/>
                            
-                            
-
+                              <jdoc:include type="message" />
+                    					<jdoc:include type="component" />
                                                                                                                  
                         </div>
-                        <div class="span4 sidebar">
+                        <div class="span3 sidebar pull-right">
                              <jdoc:include type="modules" name="center-right"/>
                          
                            
 
                          
 
-                            </div>
                         </div>
                     </div>
-                    <hr style="margin:45px 0 35px" />
+                    
+        <?php endif; ?>
+                    
+                </div>
+                <hr style="margin:45px 0 35px" />
 
+    <?php if ($isHomepage) : ?>
                      <jdoc:include type="modules" name="center-bottom"/>
-                      
+        <?php endif; ?>
                     
 
                   
 
+        </div>
 
-                </div>
-
-            </div>
-
-        <div id="footerInnerSeparator"></div>
     </div>
 
-        <?php endif; ?>
+    <div id="footerInnerSeparator"></div>
+</div>
 
 <div id="footerOuterSeparator"></div>
 
@@ -293,14 +293,16 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
         </div>
 
     </div>
-    
+
 </div>
 
+    <div class="container">
+            <br />
             <div class="row-fluid">
                <jdoc:include type="modules" name="footer"/>
-                </div>
             </div>
-
+            <br />
+    </div>
 
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/jquery.min.js" type="text/javascript"></script> 
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -311,11 +313,28 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
 <script type="text/javascript">function startCamera() {$('#camera_wrap').camera({ fx: 'scrollLeft', time: 2000, loader: 'none', playPause: false, navigation: true, height: '65%', pagination: true });}$(function(){startCamera()});</script>
 
+    <?php if( !$isHomepage ): ?>
  <script>
- $("table").each(function( index ) {
-        $(this).addClass( "table table-bordered table-hover table-condensed" );
-});
- </script>
 
+$( function () {
+
+  $("table").each(function( index ) {
+        $(this).addClass( "table table-bordered table-hover table-condensed" );
+  });
+
+  $("tr.bottom td").css( 'line-height', '1px' );
+  $("tr.bottom td").css( 'height', '1px' );
+  $("tr.bottom td").css( 'font-size', '1px' );
+  $("tr.bottom td").css( 'padding', '0' );
+  
+  $("tr.calibration td").css( 'line-height', '1px' );
+  $("tr.calibration td").css( 'height', '1px' );
+  $("tr.calibration td").css( 'font-size', '1px' );
+  $("tr.calibration td").css( 'padding', '0' );
+    
+});
+
+ </script>
+    <?php endif; ?>
 </body>
 </html>

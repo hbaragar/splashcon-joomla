@@ -3,7 +3,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <?php if ($this->item->params->get('show_title')) : ?>
-	<h2><?php echo $this->escape($this->item->title); ?></h2>
+	<h3><?php echo $this->escape($this->item->title); ?></h3>
 <?php endif; ?>
 
 
