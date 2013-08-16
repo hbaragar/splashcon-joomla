@@ -78,10 +78,10 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
                         <div class="pull-left">
                             <a href="http://indianapolis.hyatt.com/hyatt/hotels-indianapolis/" target="_blank">Hyatt Regency Indianapolis</a> - 
                             <a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a><div style="width:50px; display:inline-block;">&nbsp;</div>
-                                <a target="_blank" href="http://splash2013.plaxogroups.com"><img border="0" alt="Plaxo" src="templates/splashcon_new/images/plaxo.png"></a>
-                                <a target="_blank" href="http://www.facebook.com/pages/Splash-Conference/131028490283152"><img border="0" alt="Facebook" src="templates/splashcon_new/images/facebook.png"></a>
-                                <a target="_blank" href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2487082"><img border="0" src="templates/splashcon_new/images/linked-in.png"></a>
-                                <a href="http://twitter.com/splashcon"><img width="24" border="0" height="24" alt="Twitter" src="templates/splashcon_new/images/twitter.png"></a>
+                                <a target="_blank" href="http://splash2013.plaxogroups.com"><img border="0" alt="Plaxo" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/plaxo.png"></a>
+                                <a target="_blank" href="http://www.facebook.com/pages/Splash-Conference/131028490283152"><img border="0" alt="Facebook" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/facebook.png"></a>
+                                <a target="_blank" href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2487082"><img border="0" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/linked-in.png"></a>
+                                <a href="http://twitter.com/splashcon"><img width="24" border="0" height="24" alt="Twitter" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/twitter.png"></a>
 
                         </div>
                     </div>
@@ -210,13 +210,12 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 
                 <div class="span12" id="divMain">
 
-                    
                     <br />
-                       	<jdoc:include type="message" />
-					<jdoc:include type="component" />
-          
-          
-        
+                    
+    <?php if( !$isHomepage ): ?>
+          <jdoc:include type="message" />
+					<jdoc:include type="component" />          
+    <?php endif; ?>
                     
     <?php if ($isHomepage) : ?>
     
@@ -233,41 +232,42 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 
                     <div class="row-fluid">
     
-                        <div class="span8">
+                        <div class="span9">
                            
                              <jdoc:include type="modules" name="center-left"/>
                            
-                            
-
+                              <jdoc:include type="message" />
+                    					<jdoc:include type="component" />
                                                                                                                  
                         </div>
-                        <div class="span4 sidebar">
+                        <div class="span3 sidebar pull-right">
                              <jdoc:include type="modules" name="center-right"/>
                          
                            
 
                          
 
-                            </div>
                         </div>
                     </div>
-                    <hr style="margin:45px 0 35px" />
+                    
+        <?php endif; ?>
+                    
+                </div>
+                <hr style="margin:45px 0 35px" />
 
+    <?php if ($isHomepage) : ?>
                      <jdoc:include type="modules" name="center-bottom"/>
-                      
+        <?php endif; ?>
                     
 
                   
 
+        </div>
 
-                </div>
-
-            </div>
-
-        <div id="footerInnerSeparator"></div>
     </div>
 
-        <?php endif; ?>
+    <div id="footerInnerSeparator"></div>
+</div>
 
 <div id="footerOuterSeparator"></div>
 
@@ -289,31 +289,52 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
                
             </div>
 
-            <br /><br />
-            <div class="row-fluid">
-               <jdoc:include type="modules" name="footer"/>
-                </div>
-            </div>
-            <br />
             
         </div>
 
     </div>
-    
+
 </div>
 
+    <div class="container">
+            <br />
+            <div class="row-fluid">
+               <jdoc:include type="modules" name="footer"/>
+            </div>
+            <br />
+    </div>
 
+<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/jquery.min.js" type="text/javascript"></script> 
+<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/default.js" type="text/javascript"></script>
+<script src="<?php echo $this->baseurl ?>/scripts/coin-slider.js" type="text/javascript"></script>
 
-<script src="templates/splashcon_new/scripts/jquery.min.js" type="text/javascript"></script> 
-<script src="templates/splashcon_new/scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="templates/splashcon_new/scripts/default.js" type="text/javascript"></script>
-<script src="scripts/coin-slider.js" type="text/javascript"></script>
-
-<script src="templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script><script src="scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
-<script src="templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script><script src="<?php echo $this->baseurl ?>/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
+<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
 <script type="text/javascript">function startCamera() {$('#camera_wrap').camera({ fx: 'scrollLeft', time: 2000, loader: 'none', playPause: false, navigation: true, height: '65%', pagination: true });}$(function(){startCamera()});</script>
 
- 
+    <?php if( !$isHomepage ): ?>
+ <script>
 
+$( function () {
+
+  $("table").each(function( index ) {
+        $(this).addClass( "table table-bordered table-hover table-condensed" );
+  });
+
+  $("tr.bottom td").css( 'line-height', '1px' );
+  $("tr.bottom td").css( 'height', '1px' );
+  $("tr.bottom td").css( 'font-size', '1px' );
+  $("tr.bottom td").css( 'padding', '0' );
+  
+  $("tr.calibration td").css( 'line-height', '1px' );
+  $("tr.calibration td").css( 'height', '1px' );
+  $("tr.calibration td").css( 'font-size', '1px' );
+  $("tr.calibration td").css( 'padding', '0' );
+    
+});
+
+ </script>
+    <?php endif; ?>
 </body>
 </html>
