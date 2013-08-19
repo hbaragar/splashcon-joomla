@@ -118,3 +118,13 @@
 .sidebar .box-bg img {
   max-width: none;
 }
+.table .happening{
+  background-color: #eee;
+}
+.table th, .table th.happening{
+  background-color: #00AEE3;
+  color:#000;
+}
+.table th a {
+  color:#000;
+}
