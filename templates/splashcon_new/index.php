@@ -3,8 +3,8 @@
  * @copyright	Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
  * @license		GNU/GPL, see LICENSE.php
  * Joomla! is free software. This version may have been modified pursuant
- * to the GNU General <?php echo $this->baseurl ?>/templates/splashcon License, and as distributed it includes or
- * is derivative of works licensed under the GNU General <?php echo $this->baseurl ?>/templates/splashcon License or
+ * to the GNU General <?php echo $this->baseurl ? >/templates/splashcon License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General <?php echo $this->baseurl ? >/templates/splashcon License or
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  */
@@ -13,14 +13,16 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 $menu = & JSite::getMenu();
 $isHomepage = ($menu->getActive() == $menu->getDefault());
-
+$headerstuff = $this->getHeadData();
+$headerstuff['scripts']=array();
+$this->setHeadData($headerstuff);
 ?>
 <?php echo '<?xml version="1.0"?>'; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 
-<jdoc:include type="head" />
+
 <link href="<?php echo $this->baseurl ?>/templates/splashcon/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/splashcon_new/css/main.css" type="text/css" />
  
@@ -44,13 +46,13 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
     <!--[if IE 7]>
         <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
     <![endif]-->
-
+<jdoc:include type="head" />
 <link href="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/style.css" rel="stylesheet" type="text/css" /><link href="scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
 
     <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Palatino+Linotype" rel="stylesheet" type="text/css">
+
     <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Terminal+Dosis+Light" rel="stylesheet" type="text/css">
 
@@ -165,25 +167,7 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
                            
 
                         </div>
-                        <!--
-                        <div class="span6">
-                            <div class="page-content divHeaderText">
-                            <a href="index.html" id="divSiteTitle"><img src="./img/Splash_WebBanner-shadow.png" ></a>
-                                
-                            </div>
-                        </div> -->
 
-                        <!--
-                        <div class="span6">
-
-                            <div id="camera_wrap">
-                                    <div data-src="img/Leobig.jpg" >
-                                    <div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeFromRight camera_effected camera_caption cap1">Leo A. Meyerovich explains how social adoption patterns can help language designers make new languages that are inherently attractive and desirable by developers.</div></div>
-                                    <div data-src="img/BarbaraBIG.jpg" ><div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeFromRight camera_effected camera_caption cap1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>                                    <div data-src="img/Ryubig.jpg" ><div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeFromRight camera_effected camera_caption cap1">Seonghoon Kang and Sukyoung Ryu propose a formal specification of a JavaScript module system. A module system for JavaScript will allow safe and incremental development of JavaScript web applications.</div></div>                                    <div data-src="img/Mebig.jpg" ><div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeFromRight camera_effected camera_caption cap1">Mehrdad Afshari introduces prorogued programming, a new programming paradigm based on 3 principles: proroguing concerns, hybrid computation and executable refinement.</div></div>                                    <div data-src="img/Robbig.jpg" ><div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeFromRight camera_effected camera_caption cap1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>                                    <div data-src="img/Gregorbig.jpg" ><div style="position:absolute;bottom:10%;left:3%;padding:10px;width:50%;" class="fadeFromRight camera_effected camera_caption cap1">Gregor Richards introduces Evalorizer, a heuristics based tool which is meant to replace JavaScript eval constructs with safer JavaScript correspondents..</div></div>
-                            </div>
-
-                        </div>
-                        -->
                     </div>
 
                     <div id="headerSeparator2"></div>
@@ -223,10 +207,10 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
     
           
            
-                    <div class="list_carousel responsive">
-                       <jdoc:include type="modules" name="center"/>
+                    <!--<div class="list_carousel responsive">-->
+                       <jdoc:include type="modules" name="center" style="carousel"/>
                        
-                    </div> 
+                    <!--</div>--> 
 					          
                     
 
@@ -309,7 +293,11 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/default.js" type="text/javascript"></script>
 <script src="<?php echo $this->baseurl ?>/scripts/coin-slider.js" type="text/javascript"></script>
 
-<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script><script src="<?php echo $this->baseurl ?>/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
+<script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $('.list_carousel ul').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });
+</script>
+<script src="<?php echo $this->baseurl ?>/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
 <script type="text/javascript">function startCamera() {$('#camera_wrap').camera({ fx: 'scrollLeft', time: 2000, loader: 'none', playPause: false, navigation: true, height: '65%', pagination: true });}$(function(){startCamera()});</script>
 
@@ -318,8 +306,12 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 
 $( function () {
 
+  $("#foo2").carouFredSel();
+
+
+
   $("table").each(function( index ) {
-        $(this).addClass( "table table-bordered table-hover table-condensed" );
+        $(this).addClass( "table table-bordered table-condensed" );
   });
 
   $("tr.bottom td").css( 'line-height', '1px' );
@@ -331,10 +323,18 @@ $( function () {
   $("tr.calibration td").css( 'height', '1px' );
   $("tr.calibration td").css( 'font-size', '1px' );
   $("tr.calibration td").css( 'padding', '0' );
-    
 });
 
  </script>
     <?php endif; ?>
+    <script>
+
+    $(".bigimages img").each(function( index ) {
+        $(this).removeAttr('width');
+        $(this).removeAttr('height');
+        $(this).css( 'width', '50%' );
+    });
+
+    </script>
 </body>
 </html>

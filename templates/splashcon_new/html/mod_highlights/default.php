@@ -1,7 +1,7 @@
 <?php // no direct access
 defined('_JEXEC') or die('Restricted access'); ?>
 
-<div class="box highlights">
+<div class="box highlights<?php echo $params->get('moduleclass_sfx'); ?>">
 <div class="box-top">&nbsp;</div>
 <div class="box-gradient"><div class="box-bg">
 	<h3><?php echo $module->title; ?></h3>
