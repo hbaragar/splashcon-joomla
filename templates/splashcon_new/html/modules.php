@@ -41,5 +41,12 @@ function modChrome_slider($module, &$params, &$attribs)
 	$sliders->endPanel();
 }
 
+function modChrome_carousel($module, &$params, &$attribs)
+{
+  echo '<div class="list_carousel responsive">';	
+	echo $module->content;
+  echo '</div>';
+} 
+
 
 ?>
