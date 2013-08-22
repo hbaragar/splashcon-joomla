@@ -16,6 +16,11 @@ $isHomepage = ($menu->getActive() == $menu->getDefault());
 $headerstuff = $this->getHeadData();
 $headerstuff['scripts']=array();
 $this->setHeadData($headerstuff);
+
+$http = "http://";
+if( !empty($_SERVER['HTTPS']) ){
+    $http = "https://";
+}
 ?>
 <?php echo '<?xml version="1.0"?>'; ?>
 <!DOCTYPE HTML>
@@ -32,7 +37,7 @@ $this->setHeadData($headerstuff);
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="<?= $http; ?>html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
             
     <!-- Icons -->
@@ -49,12 +54,12 @@ $this->setHeadData($headerstuff);
 <jdoc:include type="head" />
 <link href="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/style.css" rel="stylesheet" type="text/css" /><link href="scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
 
-    <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
+    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
+    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
+    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
 
-    <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Terminal+Dosis+Light" rel="stylesheet" type="text/css">
+    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Terminal+Dosis+Light" rel="stylesheet" type="text/css">
 
     <link href="<?php echo $this->baseurl ?>/templates/splashcon_new/styles/custom.css" rel="stylesheet" type="text/css" />
 </head>
@@ -295,7 +300,7 @@ $this->setHeadData($headerstuff);
 
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $('.list_carousel ul').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });
+  $('.list_carousel ul').carouFredSel({ responsive: true, width: '100%', scroll: 1 , auto: 5000,items: {width: 320,visible: {min: 2, max: 6}} });
 </script>
 <script src="<?php echo $this->baseurl ?>/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>

@@ -349,7 +349,7 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: Ari
 
 .navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu .active > a, .navbar .dropdown-menu .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a, .navbar .nav-pills .open a.dropdown-toggle:hover {filter:none;color:rgb(255, 255, 255);background-color:#00aee3;background-image:none}
 
-.navbar .nav-pills > li > a {margin-left:2px;margin-right:2px;padding:10px 15px;border-radius:0px;color:rgb(255, 255, 255);background-color:transparent}
+.navbar .nav-pills > li > a {margin-left:2px;margin-right:2px;padding:10px;border-radius:0px;color:rgb(255, 255, 255);background-color:transparent}
 
 .navbar .nav-pills > li > a:hover, .navbar .nav li.dropdown.open.active > .dropdown-toggle, .navbar .nav-pills > li > a:focus {color:rgb(255, 255, 255);background-color:#00aee3}
 
