@@ -118,17 +118,68 @@
 .sidebar .box-bg img {
   max-width: none;
 }
-.table .happening{
-  background-color: #eee;
+
+div.at-a-glance {
+  width: 105%;
 }
-.table th, .table th.happening, td.th{
+
+.at-a-glance {
+  font-size: 11px;
+}
+
+.at-a-glance td.column {
+  text-align: center;
+  vertical-align: middle;
+  width: 7em;
+}
+
+.at-a-glance .calibration td {
+  line-height: 0;
+  padding: 0;
+  width: 2em;
+  background-color: white;
+}
+
+.at-a-glance .bottom td { border-top: solid 2px #DEF0F4; }
+
+.at-a-glance th {
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #00AEE3;
+  color:#000;
+  padding: 2px;
+}
+
+.at-a-glance th.happening     { 
   background-color: #00AEE3;
   color:#000;
 }
-.table th a, td.th a{
-  color:#000;
-  font-weight: bold;
+.at-a-glance th.not-happening { text-align: center; color: white; background-color: #00AEE3; }
+
+.at-a-glance th.room { width: 5em; }
+
+.at-a-glance .happening {
+  padding: .3ex .3em;
+  background-color: #d8d8d8;
 }
-.table ul{
-  list-style: none;
-}
+
+.at-a-glance .not-happening { background-color: #e8e8e8; }
+
+.at-a-glance table {
+  margin-right: 1px;
+  border-top: solid 2px #DEF0F4;
+ }
+
+.at-a-glance td, .at-a-glance th { border: solid 0.5px white; }
+
+.at-a-glance .session { color: blue }
+
+.at-a-glance .portfolio, .at-a-glance .portfolio a { font-weight: bold; color: #00AEE3;}
+.at-a-glance th.room a { color: black; }
+
+.at-a-glance a {background-color: inherit; }
+
+.at-a-glance .evening.happening { vertical-align: middle; text-align: center; }
+.at-a-glance .evening.happening .time-slot { white-space: nowrap; }
+
