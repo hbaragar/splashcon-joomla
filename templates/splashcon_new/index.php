@@ -37,7 +37,7 @@ if( !empty($_SERVER['HTTPS']) ){
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="<?= $http; ?>html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="<?php echo $http; ?>html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
             
     <!-- Icons -->
@@ -54,12 +54,12 @@ if( !empty($_SERVER['HTTPS']) ){
 <jdoc:include type="head" />
 <link href="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/style.css" rel="stylesheet" type="text/css" /><link href="scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
 
-    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
-    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
-    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $http; ?>fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $http; ?>fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $http; ?>fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
 
-    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
-    <link href="<?= $http; ?>fonts.googleapis.com/css?family=Terminal+Dosis+Light" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $http; ?>fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $http; ?>fonts.googleapis.com/css?family=Terminal+Dosis+Light" rel="stylesheet" type="text/css">
 
     <link href="<?php echo $this->baseurl ?>/templates/splashcon_new/styles/custom.css" rel="stylesheet" type="text/css" />
 </head>
