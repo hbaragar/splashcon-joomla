@@ -121,10 +121,14 @@
 .table .happening{
   background-color: #eee;
 }
-.table th, .table th.happening{
+.table th, .table th.happening, td.th{
   background-color: #00AEE3;
   color:#000;
 }
-.table th a {
+.table th a, td.th a{
   color:#000;
+  font-weight: bold;
+}
+.table ul{
+  list-style: none;
 }
