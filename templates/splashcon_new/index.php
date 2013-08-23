@@ -339,7 +339,10 @@ $( function () {
         $(this).removeAttr('height');
         $(this).css( 'width', '50%' );
     });
-
+    $("td.label").each(function( index ) {
+        $(this).removeClass('label');
+        $(this).addClass('th');
+    });
     </script>
 </body>
 </html>
