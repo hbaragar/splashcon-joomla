@@ -317,6 +317,9 @@ $( function () {
   $(".at-a-glance table").each(function( index ) {
         $(this).addClass( "table table-bordered table-condensed" );
   });
+    $(".overview table").each(function( index ) {
+        $(this).addClass( "table table-bordered table-condensed" );
+  });
 
   $("tr.bottom td").css( 'line-height', '1px' );
   $("tr.bottom td").css( 'height', '1px' );
