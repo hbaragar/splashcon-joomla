@@ -183,3 +183,26 @@ div.at-a-glance {
 .at-a-glance .evening.happening { vertical-align: middle; text-align: center; }
 .at-a-glance .evening.happening .time-slot { white-space: nowrap; }
 
+
+.session { font-size: 12px; }
+
+.session .coordinates { font-weight: bold; }
+
+.session .presentation .title {font-size: 18px; font-weight: bold; padding: 3ex 0 1ex 0; }
+
+.session .participant .name { font-weight: bold }
+.session .participants { padding: .5ex 0; }
+.session .participants .participant { padding-below: .5ex }
+
+.session .coordinates { font-size: 12px; font-weight: bold; padding-bottom: 2ex; }
+
+
+.presentation-extra .label { font-weight: bold; font-size: 14px; margin-right: 1em; }
+.presentation-extra { margin-bottom: 2ex; }
+
+
+.contentpagetitleprogram { font-size: 16px; }
+
+
+.role { display: inline-block; width: 6em; }
+
