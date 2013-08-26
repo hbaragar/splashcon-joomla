@@ -74,17 +74,19 @@ if( !empty($_SERVER['HTTPS']) ){
         <div class="divPanel topArea notop nobottom">
             <div class="row-fluid">
                 <div class="span12">
-
+                    <jdoc:include type="modules" name="above-menu"/>
                     <div id="divLogo" class="pull-left">
                          <a href="" id="divSiteTitle"><img src="images/Splash_WebBanner-shadow.png" /></a>
                          <br>
                          
                     </div>
 
-                    <div id="divAboveMenu" class="pull-right visible-desktop">
+                    <div id="divAboveMenu" class="pull-left visible-desktop">
+                        
                         <div class="pull-left">
                             <a href="http://indianapolis.hyatt.com/hyatt/hotels-indianapolis/" target="_blank">Hyatt Regency Indianapolis</a> - 
-                            <a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a><div style="width:50px; display:inline-block;">&nbsp;</div>
+                            <a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a>
+                            <div style="width:50px; display:inline-block;">&nbsp;</div>
                                 <a target="_blank" href="http://splash2013.plaxogroups.com"><img border="0" alt="Plaxo" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/plaxo.png"></a>
                                 <a target="_blank" href="http://www.facebook.com/pages/Splash-Conference/131028490283152"><img border="0" alt="Facebook" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/facebook.png"></a>
                                 <a target="_blank" href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2487082"><img border="0" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/linked-in.png"></a>
@@ -300,7 +302,8 @@ if( !empty($_SERVER['HTTPS']) ){
 
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $('.list_carousel ul').carouFredSel({ responsive: true, width: '100%', scroll: 1 , auto: 5000,items: {width: 320,visible: {min: 2, max: 6}} });
+  $('.list_carousel #list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 1 , auto: 5000,items: {width: 320,visible: {min: 4, max: 4}} });
+  $('.list_carousel #list_photos2').carouFredSel({  responsive: true, width: '100%', scroll: 2 , auto: 5000,items: {width: 320,visible: {min: 5, max: 5}} });
 </script>
 <script src="<?php echo $this->baseurl ?>/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
@@ -311,11 +314,7 @@ if( !empty($_SERVER['HTTPS']) ){
 
 $( function () {
 
-  $("#foo2").carouFredSel();
-
-
-
-  $("table").each(function( index ) {
+  $(".at-a-glance table").each(function( index ) {
         $(this).addClass( "table table-bordered table-condensed" );
   });
 
