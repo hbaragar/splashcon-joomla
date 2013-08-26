@@ -24,7 +24,7 @@
              }
              
 .presentation {
-               min-height:400px;
+               margin-bottom: 40px;
               }             
 .presentation img {
                    float: left;
@@ -165,12 +165,22 @@
 }
 
 
-.presentation .title {
+.title {
   font-size: 16pt;
   font-weight: bold;
   margin: 10px 0;
 }
-.presentation .participants {
+.participants {
   font-style: italic;
   margin: 10px 0;
+}
+.role {
+  font-weight: normal;
+}
+.name {
+  font-style: normal;
+  font-weight: bold;
+}
+.affiliation {
+  font-style: normal;
 }
