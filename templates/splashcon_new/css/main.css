@@ -34,6 +34,7 @@
 #divAboveMenu{
     position: relative;
     top: 10px;
+    left:50px;
 }
 .navbar {
    margin-bottom:45px !important;
@@ -41,7 +42,6 @@
 
 @media all and (max-width: 1200px) and (min-width: 980px) {
 		#divSiteTitle img {margin-top:5px; height:37px; width:192px;}
-    #divLogo { margin-top: 0px;}
 }
 @media all and (max-width: 979px)  {
 		#divSiteTitle img {margin-top:-15px; height:75px; width:385px;}
@@ -142,3 +142,39 @@
 .calibration td {
   width: 2.5%;
 }
+#decorative2 .box-bg
+{
+  margin: 0px;
+  padding: 0px;
+  background: inherit; 
+  border: 0px none;
+  box-shadow: none;
+}
+
+#decorative2 .box-bg .search input, #decorative2 .box-bg .search .btn{
+  font-size: 8pt;
+  padding: 0 5px;
+}
+#decorative2 .box-bg {
+  position: absolute;
+  right: 19px;
+  top: 7px;
+}
+#decorative2 .box-bg .searchtop {
+  margin: 0px;
+}
+
+
+/* 
+  a) furnace does not have a method of reading the pallet
+  b) why does not have the loader the functionality?
+  c) if they connect the barcode then it will be okay (probably) they need more information. They need the interface about the barcode scanner.
+  d) they need the host-client software, they are just simulating the proccess
+  e) they need more information about the new functionality. Original estimation was before the end of the year.
+
+
+
+  1) VPN na testovaci MES server
+  2) 
+
+*/

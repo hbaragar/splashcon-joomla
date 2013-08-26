@@ -74,17 +74,19 @@ if( !empty($_SERVER['HTTPS']) ){
         <div class="divPanel topArea notop nobottom">
             <div class="row-fluid">
                 <div class="span12">
-
+                    <jdoc:include type="modules" name="above-menu"/>
                     <div id="divLogo" class="pull-left">
                          <a href="" id="divSiteTitle"><img src="images/Splash_WebBanner-shadow.png" /></a>
                          <br>
                          
                     </div>
 
-                    <div id="divAboveMenu" class="pull-right visible-desktop">
+                    <div id="divAboveMenu" class="pull-left visible-desktop">
+                        
                         <div class="pull-left">
                             <a href="http://indianapolis.hyatt.com/hyatt/hotels-indianapolis/" target="_blank">Hyatt Regency Indianapolis</a> - 
-                            <a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a><div style="width:50px; display:inline-block;">&nbsp;</div>
+                            <a href="http://visitindy.com/" target="blank">Indianapolis, Indiana</a>
+                            <div style="width:50px; display:inline-block;">&nbsp;</div>
                                 <a target="_blank" href="http://splash2013.plaxogroups.com"><img border="0" alt="Plaxo" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/plaxo.png"></a>
                                 <a target="_blank" href="http://www.facebook.com/pages/Splash-Conference/131028490283152"><img border="0" alt="Facebook" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/facebook.png"></a>
                                 <a target="_blank" href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2487082"><img border="0" src="<?php echo $this->baseurl ?>/templates/splashcon_new/images/linked-in.png"></a>
