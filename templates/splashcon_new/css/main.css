@@ -165,16 +165,12 @@
 }
 
 
-/* 
-  a) furnace does not have a method of reading the pallet
-  b) why does not have the loader the functionality?
-  c) if they connect the barcode then it will be okay (probably) they need more information. They need the interface about the barcode scanner.
-  d) they need the host-client software, they are just simulating the proccess
-  e) they need more information about the new functionality. Original estimation was before the end of the year.
-
-
-
-  1) VPN na testovaci MES server
-  2) 
-
-*/
+.presentation .title {
+  font-size: 16pt;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.presentation .participants {
+  font-style: italic;
+  margin: 10px 0;
+}
