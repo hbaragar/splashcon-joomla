@@ -41,6 +41,7 @@
 
 @media all and (max-width: 1200px) and (min-width: 980px) {
 		#divSiteTitle img {margin-top:5px; height:37px; width:192px;}
+    #divLogo { margin-top: 0px;}
 }
 @media all and (max-width: 979px)  {
 		#divSiteTitle img {margin-top:-15px; height:75px; width:385px;}
@@ -131,4 +132,13 @@
 }
 .table ul{
   list-style: none;
+}
+
+.at-a-glance .portfolio, .at-a-glance .portfolio a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.calibration td {
+  width: 2.5%;
 }

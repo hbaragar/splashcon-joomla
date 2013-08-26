@@ -313,7 +313,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
  .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {background-color:#009bca;}
 
-.divHeaderText {border-color: rgb(51, 51, 51); padding-top: 50px; padding-bottom: 50px;}
+.divHeaderText {border-color: rgb(51, 51, 51); padding-top: 30px; padding-bottom: 5px;}
 
 #decorative1 {-webkit-background-size:auto;-moz-background-size:auto;-o-background-size:auto;background-size:auto;}
 
@@ -507,3 +507,13 @@ ul#menulist_root li ul li a:hover { color:#AA0000; background:none;}
     margin-right: 0;
 }
 
+@media all and (max-width: 1200px) and (min-width: 980px) {
+    #divLogo { margin-top: 0px;}
+    #divAboveMenu { top:0px;}
+    #divMenuRight { 
+        position: absolute;
+        right: 0;
+        top: 24px;
+    }
+
+}
