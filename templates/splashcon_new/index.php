@@ -302,7 +302,8 @@ if( !empty($_SERVER['HTTPS']) ){
 
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $('.list_carousel ul').carouFredSel({ responsive: true, width: '100%', scroll: 1 , auto: 5000,items: {width: 320,visible: {min: 2, max: 6}} });
+  $('.list_carousel #list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 1 , auto: 5000,items: {width: 320,visible: {min: 4, max: 4}} });
+  $('.list_carousel #list_photos2').carouFredSel({  responsive: true, width: '100%', scroll: 2 , auto: 5000,items: {width: 320,visible: {min: 5, max: 5}} });
 </script>
 <script src="<?php echo $this->baseurl ?>/scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
 <script src="<?php echo $this->baseurl ?>/templates/splashcon_new/scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
@@ -312,10 +313,6 @@ if( !empty($_SERVER['HTTPS']) ){
  <script>
 
 $( function () {
-
-  $("#foo2").carouFredSel();
-
-
 
   $("table").each(function( index ) {
         $(this).addClass( "table table-bordered table-condensed" );

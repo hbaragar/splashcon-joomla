@@ -319,7 +319,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 #decorative2{background-image:-moz-linear-gradient(bottom,#00a2d3,#00aee3);background-image:-o-linear-gradient(bottom,#00a2d3,#00aee3);background-image:-webkit-gradient(linear,left top, left bottom,from(#00a2d3),to(#00aee3));background-image:-webkit-linear-gradient(bottom,#00a2d3,#00aee3);background-image:linear-gradient(to bottom,#00a2d3,#00aee3);background-image:linear-gradient(bottom,#00a2d3,#00aee3);}
 
-#contentOuterSeparator{margin-top: 0px; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid; margin-bottom: 25px; height: 0px; background-color: transparent;}
+#contentOuterSeparator{margin-top: 0px; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid; margin-bottom: 0px; height: 0px; background-color: transparent;}
 
 #footerOuterSeparator{margin-top: 55px; border-top-width: 0px; border-top-style: solid; border-top-color: rgb(95, 95, 95);}
 
