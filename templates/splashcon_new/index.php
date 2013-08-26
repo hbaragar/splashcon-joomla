@@ -314,7 +314,7 @@ if( !empty($_SERVER['HTTPS']) ){
 
 $( function () {
 
-  $("table").each(function( index ) {
+  $(".at-a-glance table").each(function( index ) {
         $(this).addClass( "table table-bordered table-condensed" );
   });
 
