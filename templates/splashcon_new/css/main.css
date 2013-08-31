@@ -135,6 +135,10 @@ font-weight:700;
 padding-bottom:2ex;
 }
 
+.session .coordinates .chair {
+font-weight:500;
+}
+
 .session .presentation .title {
 font-size:18px;
 font-weight:700;
