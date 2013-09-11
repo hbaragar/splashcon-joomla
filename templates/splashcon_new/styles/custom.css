@@ -519,3 +519,6 @@ ul#menulist_root li ul li a:hover { color:#AA0000; background:none;}
 
 }
 
+.not-happening a,.happening a {
+    color: #000000;
+}
